@@ -212,21 +212,6 @@
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF69.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF70.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF71.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF72.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF73.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF74.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF75.png" width="700"  title="hover text">
   </p>
   <p align="center">
