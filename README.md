@@ -204,13 +204,25 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF29.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Log into the EC2 instance created to intialize the database and run these commands to update packages first. Keep in mind this is for Ubuntu. Update according to the OS you used for this EC2 instance. Here I also installed mysql to the instance. For linux it will be different. it will be maria-db instead of mysql-client. 
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF30.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Now, go back to the backend security group and add MySQL/Aurora port to the EC2 instance that was just created.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF31.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Use the command above to log into the mysql database created. Use the user "admin" and the generated password RDS gave when we selected it and the RDS was created.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF32.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Use the "show databases;" command to show the databases created. Here you should see the "accounts" database that was created in RDS.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF33.png" width="700"  title="hover text">
