@@ -145,20 +145,19 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF18.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  The subnet settings, Choose thr exiting subnet group created for memcache. I choose the associatee subnets with all the availibility zones in the east.
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF19.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  
+  The subnet settings, Choose the existing subnet group created for memcached. I choose the associate subnets with all the availibility zones in the east.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF20.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  In the advanced settings, go to Security and click "Manage" and add the security group for the backend services that was created earlier. If you have SNS notificationsenabled you can add it and recieve emails.
+ </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF21.png" width="700"  title="hover text">
   </p>
+  <p align="center">
+  Now that Elasticache has been configured. Let's go to "Amazon MQ" and select RabbitMQ.
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF22.png" width="700"  title="hover text">
   </p>
