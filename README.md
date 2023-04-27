@@ -426,7 +426,7 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF66.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Now, I will route it using a DNS name created with GoDaddy. I clicked Add New Record.
+  Now, I will route it using a DNS name created with GoDaddy(ktdevops.com). I clicked Add New Record.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF67.png" width="700"  title="hover text">
@@ -437,17 +437,37 @@ This gives ease of infrastructure management that will be easy to use and will n
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF68.png" width="700"  title="hover text">
   </p>
-  
+  As you can see, I typed in the new CNAME record in the URL bar and it routed the website to it.
+  </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF69.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Go back to Elastic Beanstalk and go into the configuration and go to Processes. Click Edit. Make sure that stickiness is enabled.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF75.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Here, I created a CloudFront distribution. This will allow users to access the application in the fastest way possible. The reason that it will be helpful is that a CDN like CloudFront will send the info that is cached data from the nearest edge location. That way, users will not have to make its way back to the application completely. It will route to cloudfront first to recieve information thats has been accessed once before.
+</p>
+<p align="center">
+  For Origin, choose the DNS record we created and just accessed.
+  For Protocol, chose Match Viewer. So that which ever one the user accesses it will be able to serve. Whether its HTTP or HTTPS.
+  Chose the SSL protocol.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF76.png" width="700"  title="hover text">
+  </p>
+  Dont need to edit Origin path because it will already route to /login. I created the name as the DNS name. Didnt enable Origin shield for this project. For the Default cache behavior, these are the settings.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF77.png" width="700"  title="hover text">
   </p>
+  <p align="center">
+  For the Cache policy I chose CacheOptimized. This now created CloudFront will allow traffic to recieve the application in a much faster and improved way.
+  
+  <p align="center">
+    This project is now completed and you can now see with the combination of PAAS and SAAS services from AWS this project remained the same but internally it behaves with better performance and easier to manage.
+    </p>
   
