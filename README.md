@@ -288,7 +288,7 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF43.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  For the security group choose the security group for the backend services.
+  Go to Configuration settings before you save the changes. For the security group choose the security group for the backend services.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF44.png" width="700"  title="hover text">
@@ -324,10 +324,19 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF49.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  The Environment should now be up and running.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF50.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Edit the inbound rules and connect the backend services to the elastic beanstalk security group created.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF51.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Including Elasticache, RDS, Rabbit MQ ports.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF52.png" width="700"  title="hover text">
