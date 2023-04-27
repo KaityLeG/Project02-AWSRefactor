@@ -66,10 +66,10 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF4.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Now, to create the paramaters for the database subnet group. These parameters will apply to the database when you attach it.
+  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF5.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF5.png" width="700"  title="hover text">
+  Now, to create the paramaters for the database subnet group. These parameters will apply to the database when you attach it.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF6.png" width="700"  title="hover text">
@@ -93,34 +93,65 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF9.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  The connectivty settings, we will not connecft to an ec2 insatnce and keep the network type IPv4. Chose the default VPC once again. Select the DB subnet group we made earlier.
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF10.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  For this, we will not be allowing public access to the databse. Only other AWS services will be able to communicate with the DB. Choose an exiting VPC secrity group which is the security group for the backend services created earlier.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF11.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Click "Password authentication" so wthere will be a security measure of authenticating using database passwords.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF12.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  For Monitoring, it will be enabled to take a closer look at the performance and metrics of the database.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF13.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For the actual database, here it will be named "accounts". As in created accounts. Apply the DB parameter group that was created. Automated backups are enabled.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF14.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Checking all the boxes to be able to log events to CloudWatch.
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF15.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Now Go to Elasticache and create a parameter group for the service.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF16.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Create the Elasticache subnet group just like we did the RDS database subnet group. Choose the default VPC again.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF17.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Now to create the Elasticache cluster. It will be on the cloud of course, and we will name it.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF18.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For the cluster settings I choose the version 1.4.5 for this. The port will be on 11211 the memcached port. Select the parameter group we created for memcached. Choose t2.micro for the Node. And there will be one node.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF19.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  The subnet settings, Choose thr exiting subnet group created for memcache. I choose the associatee subnets with all the availibility zones in the east.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF20.png" width="700"  title="hover text">
