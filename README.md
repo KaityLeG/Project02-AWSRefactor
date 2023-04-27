@@ -122,36 +122,36 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF14.png" width="700"  title="hover text">
   </p>
   <p align="center">
-
+  Now Go to Elasticache and create a parameter group for the service.
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF15.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  Now Go to Elasticache and create a parameter group for the service.
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF16.png" width="700"  title="hover text">
   </p>
   <p align="center">
   Create the Elasticache subnet group just like we did the RDS database subnet group. Choose the default VPC again.
   </p>
   <p align="center">
+  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF16.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+ Now to create the Elasticache cluster. It will be on the cloud of course, and we will name it.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF17.png" width="700"  title="hover text">
-  </p>
-  <p align="center">
-  Now to create the Elasticache cluster. It will be on the cloud of course, and we will name it.
-  </p>
-  <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF18.png" width="700"  title="hover text">
   </p>
   <p align="center">
   For the cluster settings I choose the version 1.4.5 for this. The port will be on 11211 the memcached port. Select the parameter group we created for memcached. Choose t2.micro for the Node. And there will be one node.
   </p>
   <p align="center">
-  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF19.png" width="700"  title="hover text">
+  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF18.png" width="700"  title="hover text">
   </p>
   <p align="center">
   The subnet settings, Choose thr exiting subnet group created for memcache. I choose the associatee subnets with all the availibility zones in the east.
+  </p>
+  <p align="center">
+  <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF19.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF20.png" width="700"  title="hover text">
