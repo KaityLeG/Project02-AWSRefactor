@@ -228,19 +228,37 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF33.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  I took the the source code of the project and cloned it in the EC2 instance.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF34.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  I went to the project branch and selected AWSRefactor.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF35.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  CD into the main/resources/ directory and you should see db_back.sql file here.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF36.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Get the endpoint URL of the RDS database. Run this command with the proper username and password of your database you created. This command will basically input the "accounts" database to this file.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF37.png" width="700"  title="hover text">
   </p>
+   <p align="center">
+  Now run this command which will log into the accounts database.
+  </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF38.png" width="700"  title="hover text">
+  </p>
+   <p align="center">
+  run the command "show tables;" and the "Accounts" table will now be shown. The database is now working and intialized.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF39.png" width="700"  title="hover text">
