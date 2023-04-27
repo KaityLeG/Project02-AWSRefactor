@@ -72,22 +72,22 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF5.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Here, we will now create the actual AWS RDS database. Create the name. The username login will be "admin" and the password will be auto-generated.
-  </p>
-  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF6.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Choose burstible classes with a t2.mirco size. This project will not need much storage.
+  Here, we will now create the actual AWS RDS database. Create the name. The username login will be "admin" and the password will be auto-generated.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF7.png" width="700"  title="hover text">
   </p>
-  <p align="center">
-  For stage I choose General Purpose SSD. This will serve a general web application. I allocated 20 GiB. Again, this will not need alot of storage for this particular project. I enabled autoscaling for the database so it can scale according to the read and writes the application recieves. So you will not need to worry about a crashing application.
+   <p align="center">
+  Choose burstible classes with a t2.mirco size. This project will not need much storage.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF8.png" width="700"  title="hover text">
+  </p>
+   <p align="center">
+  For stage I choose General Purpose SSD. This will serve a general web application. I allocated 20 GiB. Again, this will not need alot of storage for this particular project. I enabled autoscaling for the database so it can scale according to the read and writes the application recieves. So you will not need to worry about a crashing application.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF9.png" width="700"  title="hover text">
