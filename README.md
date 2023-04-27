@@ -42,6 +42,8 @@ This gives ease of infrastructure management that will be easy to use and will n
 * CloudFront
 </p>
 
+***
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRFDiagram.drawio.png"  title="hover text">
   </p>
