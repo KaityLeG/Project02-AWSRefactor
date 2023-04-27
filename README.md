@@ -390,29 +390,54 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF60.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Here we will run "mvn install" to run a build test and create a .war file if all is successful. This will package the java application.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF61.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Here the build was a success. I moved into the target folder and as seen here, the application was packaged into a .war file.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF62.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  I made my way back to Elastic Beanstalk, clicked the environment to upload a version. upload the .war file and now a new version of the application will be deployed.
+ </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF63.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  The version is now uploaded. I now click Deploy.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF64.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Here, this is an example of the Rolling deployment that took place on this application. You can see two Batches weere created. The first batch was the first batch of instances that recieved the update. After completed it took the second batch and performed the same application version update.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF65.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Grab the elastic beanstalk URL. Here is the live website. It is no longer a sample code. This is the updated version and now an actual application using all the backend services we created.
+ </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF66.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Now, I will route it using a DNS name created with GoDaddy. I clicked Add New Record.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF67.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  The new record will be a CNAME, give it anyname you please, and insert the Elastic Beanstalk endpoint in the Value block.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF68.png" width="700"  title="hover text">
   </p>
+  
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF69.png" width="700"  title="hover text">
   </p>
