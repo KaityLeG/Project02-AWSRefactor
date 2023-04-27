@@ -1,5 +1,46 @@
 # Project02-AWSRefactor
 
+<p align="center">
+
+This project focuses on the refactoring or re-architecting of Multi-tier web application.
+Refactoring refers to when you reconstruct and improve a code’s internal structure without actually changing how the code behaves. The code will operate how it usually does, but in a more improved and agile way. You can add new features, scale effectively, have better performance for the application workload. This method aims to boost agility and improve business continuity.
+</p>
+
+**EXAMPLE:**
+<p>
+You have a project that has various services running on physical/virtual/ cloud machines.
+And to manage all of it it many require multiple teams to handle it.
+The problem with this would be too much operational overhead
+Struggling with uptime and scaling.
+Upfront Capital expenses and regular operational expenses,
+Using local data centers which will be difficult to automate.
+  </p>
+
+**SOLUTION:**
+* A cloud platform using PAAS and SAAS services from AWS. Flexible and elastic.
+* Infrastructure as code
+* Pay as you go
+
+This gives ease of infrastructure management that will be easy to use and will not require so many teams.
+
+
+ **OBJECTIVE:**
+
+* FLEXIBLE INFRASTRUCTURE
+* NO UPFRONT COST
+* IAAC
+* PAAS
+* SAAS
+</p>
+
+**AWS Cloud services used:**
+* Elastic Beanstalk
+* AWS Relational Database
+* Elasticache
+* Route 53
+* Amazon MQ
+* CloudFront
+</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRFDiagram.drawio.png"  title="hover text">
