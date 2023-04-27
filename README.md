@@ -49,11 +49,19 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF1.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  First, create a security group for all the backend services. I chose the default VPC.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF2.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  The inbound rules for this security group will be SSH as a dummy rule. Then add All traffic and the source will be to intself. So that the traffic can route into itself.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF3.png" width="700"  title="hover text">
   </p>
+  <p align="center">
+  Now, to create the Database subnet group. Again choosing the default VPC.
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF4.png" width="700"  title="hover text">
   </p>
