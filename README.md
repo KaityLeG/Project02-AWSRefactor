@@ -104,25 +104,25 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF11.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Click "Password authentication" so wthere will be a security measure of authenticating using database passwords.
+  Click "Password authentication" so there will be a security measure of authenticating using database passwords. For Monitoring, it will be enabled to take a closer look at the performance and metrics of the database.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF12.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  For Monitoring, it will be enabled to take a closer look at the performance and metrics of the database.
+  For the actual database, here it will be named "accounts". As in created accounts. Apply the DB parameter group that was created. Automated backups are enabled.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF13.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  For the actual database, here it will be named "accounts". As in created accounts. Apply the DB parameter group that was created. Automated backups are enabled.
+  Checking all the boxes to be able to log events to CloudWatch.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF14.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Checking all the boxes to be able to log events to CloudWatch.
+
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF15.png" width="700"  title="hover text">
   </p>
