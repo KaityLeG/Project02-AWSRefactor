@@ -264,31 +264,61 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF39.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Go to AmazonMQ and go to RabbitMQ that was created and grab the endpoint. It will be useful later on.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF40.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Go to Elasticache and grab the endpoint for this as well. It will be useful late on.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF41.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Go to Elastic Beanstalk and we will now create the container for the application.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF42.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  The platform that will be used is Tomcat for the java application we will be deploying. For now, choose Sample code and will uplaod the application code later.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF43.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For the security group choose the security group for the backend services.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF44.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  For the auto-scaling component, Choose Load balanced and here I chose a Min of 2 and Max of 8 instances that will scale.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF45.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For the instance type, choose t2.micro and choose Any for availibility zones.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF46.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  For the Scaling triggers, Choosing NetworkOut will scaling OUT depend on network traffic.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF47.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For Application Deployments, choose Rolling. Rolling deployment will keep downtine to a minimum by rotating out instances as they are updated so a version of the application will always be up and running until all the latest changes to the application instances are applied. It will delete old instances and add new ones, completing the update cycle and the user will experience very minimum downtime if none at all. a 50% percentage will keep half of the instances up and leave the other half to be updated at a time.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF48.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  In Modify security, the service role of elastic beanstalk will be applied. Choose a keypair and if there is an elastic beanstalk IAM profile created for you choose it for the instance profile. If not, leave it blank.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF49.png" width="700"  title="hover text">
