@@ -330,7 +330,7 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF50.png" width="700"  title="hover text">
   </p>
   <p align="center">
-  Edit the inbound rules and connect the backend services to the elastic beanstalk security group created.
+  Edit the inbound rules of the backend security group and connect the backend services to the elastic beanstalk security group created.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF51.png" width="700"  title="hover text">
@@ -342,25 +342,49 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF52.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Go the the Configuration of the environment and created a listener of 443. and select an SSL certificiate you have created in Route 53. 
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF53.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Go to the Processes, and edit port 80.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF54.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  For the health check, we will allow the Path to be /login. That is where the health check will take place on the application. Save.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF55.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Enable stickiness that will allow caching and remember user data for each session the user create. 
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF56.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Going back to the terminal and going back into the project source code by going back to the branch.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF57.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Go back to the refactor project branch.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF58.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  CD back into the src/main/resources/ folder. Here is the applcation.properties. I went into vim editor to modify the details and insert the endpoints I grabbed for each service I created.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF59.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  I configured the details of the database connection and inserted my endpoints, and username and password for RabbitMQ for a proper connection. 
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF60.png" width="700"  title="hover text">
