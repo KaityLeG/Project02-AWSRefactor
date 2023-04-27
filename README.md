@@ -162,22 +162,43 @@ This gives ease of infrastructure management that will be easy to use and will n
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF22.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Select Single-instance broker. This project is small so we will not need cluster deployment. But for production purposes it is useful.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF23.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  In Configure Settings, confirm settings for the Broker.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF24.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Create the username. I used "rabbit". Create a password.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF25.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Choose the engine version, Allow only proivate access and use the default VPC and subnets. Select the existing security group. And choose the security group for the backend services created earlier.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF26.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Choose the settings and allow maintenance upgrades. Choose AWS owned CMK.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF27.png" width="700"  title="hover text">
   </p>
   <p align="center">
+  Go to the Amazon MQ broker just created and find the Endpoint of the broker. Copy it and keep it noted, it will we used later on.
+  </p>
+  <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF28.png" width="700"  title="hover text">
+  </p>
+  <p align="center">
+  Now go to EC2 instances and create an EC2 instance to log in and intialize the RDS Database created earlier. I named it "my-sql-client". You can choose any OS but for this I chose Ubuntu. For any one you choose just make sure you understand how it works.
   </p>
   <p align="center">
   <img src="https://raw.githubusercontent.com/KaityLeG/Project02-AWSRefactor/main/images/AWSRF29.png" width="700"  title="hover text">
